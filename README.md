@@ -8,6 +8,5 @@
 ## Run
 - node main
 - node main inscribir -n=Name -c=12345 -i=300
-
-You can also try with -i = 400, 500
+-- You can also try with -i = 400, 500
 
