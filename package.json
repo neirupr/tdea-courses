@@ -1,0 +1,26 @@
+{
+  "name": "cursos",
+  "version": "1.0.0",
+  "description": "First delivery",
+  "main": "main.js",
+  "scripts": {
+    "test": "inscribir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neirupr/tdea-courses.git"
+  },
+  "keywords": [
+    "cursos",
+    "tdea"
+  ],
+  "author": "Neiro Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neirupr/tdea-courses/issues"
+  },
+  "homepage": "https://github.com/neirupr/tdea-courses#readme",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  }
+}
