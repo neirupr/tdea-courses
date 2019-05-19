@@ -3,9 +3,9 @@ Se realizó correctamente el proceso de inscripción, a continuación se present
 
 INFORMACIÓN DEL ESTUDIANTE
 Nombre: NeiroTo
-Cédula: :1234
+Cédula: 1234
 
 INFORMACIÓN DEL CURSO
-Nombre: Programación Orientada a Objetos
-Código: 400
-Precio: 210000
+Nombre: Fundamentos de Programación
+Código: 300
+Precio: 150000
