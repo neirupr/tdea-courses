@@ -26,7 +26,7 @@ if(argv._[0] != 'inscribir'){
 		describeCourse(course)
 		confirmationText = subscribe(argv.n, argv.c, course)
 	}else{
-		console.log('¡El curso ' + argv.i + ' solicitado no existe!')
+		confirmationText = '¡El curso ' + argv.i + ' solicitado no existe!'
 	}
 }
 
