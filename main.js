@@ -1,9 +1,12 @@
 "use strict"
 
-const courses = require('./data')
-const {argv, subscribe} = require('./subscribe')
+const courses = require('./data'),
+	{argv, subscribe} = require('./subscribe'),
+	express = require('express'),
+	app = express()
 
-let describeCourse = course => console.log('El curso de ' + course.name + ' con ID = ' + course.id + ' tiene un costo de ' + course.price)
+let describeCourse = course => console.log('El curso de ' + course.name + ' con ID = ' + course.id + ' tiene un costo de ' + course.price),
+	confirmationText = ""
 
 /*No command inscribir was requested*/
 if(argv._[0] != 'inscribir'){
@@ -21,8 +24,14 @@ if(argv._[0] != 'inscribir'){
 
 	if(course !== undefined){
 		describeCourse(course)
-		subscribe(argv.n, argv.c, course);
+		confirmationText = subscribe(argv.n, argv.c, course)
 	}else{
 		console.log('¡El curso ' + argv.i + ' solicitado no existe!')
 	}
 }
+
+app.get('/', (req, res)=>{
+	res.send(confirmationText)
+})
+
+app.listen(3000)

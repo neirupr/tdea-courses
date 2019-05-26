@@ -11,5 +11,4 @@
 
 ## Other indications
 - You can also try with -i = 400, 500
-- Generated file can be found as inscripcion.txt
-
+- Generated file can be found as inscripcion.txt, also navigating to localhost:3000

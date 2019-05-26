@@ -2,8 +2,8 @@ Se realizó correctamente el proceso de inscripción, a continuación se present
 
 
 INFORMACIÓN DEL ESTUDIANTE
-Nombre: NeiroTo
-Cédula: 1234
+Nombre: Name
+Cédula: 12345
 
 INFORMACIÓN DEL CURSO
 Nombre: Fundamentos de Programación

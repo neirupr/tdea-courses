@@ -1,19 +1,21 @@
-const fs = require('fs')
-const options = {
-	nombre:{
-		demand: true,
-		alias: 'n'
+"use strict"
+
+const fs = require('fs'),
+	options = {
+		nombre:{
+			demand: true,
+			alias: 'n'
+		},
+		cedula:{
+			demand: true,
+			alias: 'c'
+		},
+		id:{
+			demand: true,
+			alias: 'i'
+		}
 	},
-	cedula:{
-		demand: true,
-		alias: 'c'
-	},
-	id:{
-		demand: true,
-		alias: 'i'
-	}
-}
-const argv = require('yargs').command('inscribir', 'Inscribirse en un curso', options).argv;
+	argv = require('yargs').command('inscribir', 'Inscribirse en un curso', options).argv
 
 let subscribe = (name, id, course) => {
 	let text = 'Se realizó correctamente el proceso de inscripción, a continuación se presenta la información del estudiante y del curso:\n\n\nINFORMACIÓN DEL ESTUDIANTE\nNombre: ' + name + '\nCédula: ' + id + 
@@ -23,6 +25,8 @@ let subscribe = (name, id, course) => {
 		if(err) throw (err);
 		console.log('¡Se ha inscrito correctamente!');
 	})
+
+	return text
 }
 
 module.exports = {argv, subscribe}
